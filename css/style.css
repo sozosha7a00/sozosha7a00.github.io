@@ -1,5 +1,113 @@
 @charset "UTF-8";
+/*Googleフォント*/
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
-font-family:serif;
+body {
+    background: url(../img/bg-skew.svg) no-repeat center top/cover;
+}
+
+.font-e {
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+}
+
+header h1 {
+    margin: 1rem;
+}
+
+header nav {
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all 2s;
+}
+
+header nav a:hover {
+    text-decoration: underline wavy;
+}
+
+
+header h2 {
+    margin-top: 0;
+}
+
+nav {
+    width: 375px;
+}
+
+/*about*/
+.aboutbg {
+    background: #F4F9FF;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.about h3 {
+    text-align: center;
+}
+
+.about .inner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about .inner h3 {
+    font-size: 2rem;
+}
+
+/*スマホ用*/
+@media(max-width:768px) {
+    .pc-only {
+        display: none;
+    }
+
+    .container,
+    .inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/*PC用*/
+@media(min-width:769px) {
+    .sp-only {
+        display: none;
+    }
 }
